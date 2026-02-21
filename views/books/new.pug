@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  h1 Add New Book
+
+  form(method="POST", action="/books")
+    .mb-3
+      label.form-label Title
+      input.form-control(type="text", name="title", required)
+
+    .mb-3
+      label.form-label Author
+      input.form-control(type="text", name="author", required)
+
+    .mb-3
+      label.form-label Description
+      textarea.form-control(name="description")
+
+    .mb-3
+      label.form-label Published Year
+      input.form-control(type="number", name="publishedYear")
+
+    button.btn.btn-primary(type="submit") Save Book

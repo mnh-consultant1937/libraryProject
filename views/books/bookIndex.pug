@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+  h1 All Books 📚
+  a.btn.btn-success.mb-3(href="/books/new") Add New Book
+
+  if books.length === 0
+    p No books found.
+  else
+    table.table.table-bordered
+      thead
+        tr
+          th Title
+          th Author
+          th Year
+      tbody
+        each book in books
+          tr
+            td
+              a(href=`/books/${book._id}`)= book.title
+            td= book.author
+            td= book.publishedYear

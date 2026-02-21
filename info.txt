@@ -1,0 +1,8 @@
+username: nakibkhan94_db_user
+password: sSehp8CEdxAmGBu8
+connection string: mongodb+srv://nakibkhan94_db_user:sSehp8CEdxAmGBu8@cluster0.8iovgqs.mongodb.net/?appName=Cluster0
+
+database: librarydb
+collection: books
+
+uri: mongodb+srv://nakibkhan94_db_user:sSehp8CEdxAmGBu8@cluster0.8iovgqs.mongodb.net/librarydb?appName=Cluster0

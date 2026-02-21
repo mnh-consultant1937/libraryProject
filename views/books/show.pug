@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  h1= book.title
+
+  ul.list-group.mb-3
+    li.list-group-item
+      strong Author:
+      |  #{book.author}
+    li.list-group-item
+      strong Year:
+      |  #{book.publishedYear}
+    li.list-group-item
+      strong Description:
+      |  #{book.description}
+
+  a.btn.btn-warning(href=`/books/${book._id}/edit`) Edit
+  a.btn.btn-danger(href=`/books/${book._id}/delete`) Delete
+  a.btn.btn-secondary(href="/books") Back

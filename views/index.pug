@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  // Hero Section
+  .p-5.mb-4.bg-light.rounded-3
+    .container-fluid.py-5
+      h1.display-4 Library Project 📚
+      p.lead Welcome to My Library Management System. Manage your books efficiently and easily.
+      hr.my-4
+      a.btn.btn-primary.btn-lg(href="/books", role="button") View Books
+
+  // Optional Features Section
+  .row.g-4
+    .col-md-6
+      .card.h-100.shadow-sm
+        .card-body
+          h5.card-title Add New Books
+          p.card-text Easily add new books to your library and manage them.
+          a.btn.btn-outline-primary(href="/books/new") Add Book
+    .col-md-6
+      .card.h-100.shadow-sm
+        .card-body
+          h5.card-title Browse Books
+          p.card-text View all available books in your library.
+          a.btn.btn-outline-primary(href="/books") Browse Books
